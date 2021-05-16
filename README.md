@@ -8,6 +8,7 @@ Presentado por: Danilo Diaz Valencia - Santiago Jaramillo
 El ejercicio actual consiste en la predicción de supervivencia de pasajero en la catástrofe del Titanic. El objetivo de este proyecto es de desplegar un servicio web en la nube publica de Azure mediante AzureML. Este servicio es capaz de predecir la probabilidad de supervivencia del pasajero según el género y la clase en la que estaba viajando.[link](https://www.kaggle.com/c/titanic/data)
 
 ## Descripción de los datos
+[Titanic Dataset](https://www.kaggle.com/c/titanic/data)
 
 
 - passenger_id : Id Pasajero
@@ -27,12 +28,13 @@ El ejercicio actual consiste en la predicción de supervivencia de pasajero en l
 
 - Subscripción de Azure.
 - Docker, solo para ambiente local, recomendado para procesos de debug.
-- Conda y Python 3.8 - ``` conda create -n azure-deploy python=3.8 ```
+- Crear ambiente
+- Python 3.8 -
 - IDE vs code o equivalente.
 
 ## ¿Cómo ejecutarlo?
 
-- Crear un nuevo ambiente .
+- Crear un nuevo ambiente 
 - Instalar las siguientes dependencias
 
 ```bash
@@ -77,24 +79,24 @@ python ./02-create-compute.py
 python ./03-test-workspace-remote.py
 ```
 
-![Compute cloud](images/Step-3.jpg)
+![Test-workspace](images/Step-3.jpg)
 
 
 - Ejecute el cuarto script para registrar el modelo en Azure
 
 
-![Compute cloud](images/Step-4.jpg)
+![Model Registry](images/Step-4.jpg)
 
 
 - Ejecute el quinto script para desplegar el modelo
 
 
-![Compute cloud](images/Step-5.jpg)
+![Deploy Azure Model](images/Step-5.jpg)
 
 
 # Servicio Azure Test
 
 
-![Compute cloud](images/Step-6.jpg)
+![Test Model](images/Step-6.jpg)
 
 
