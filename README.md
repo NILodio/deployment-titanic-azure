@@ -71,7 +71,7 @@ NOTA: Si se quiere es posible usar azure cli!
 python ./02-create-compute.py
 ```
 
-![Compute cloud](images/Step-1.jpg)
+![Compute cloud](images/Step-1.png)
 
 - Ejecutar el tercer script para verificar ambiente de trabajo
 
@@ -79,24 +79,24 @@ python ./02-create-compute.py
 python ./03-test-workspace-remote.py
 ```
 
-![Test-workspace](images/Step-3.jpg)
+![Test-workspace](images/Step-3.png)
 
 
 - Ejecute el cuarto script para registrar el modelo en Azure
 
 
-![Model Registry](images/Step-4.jpg)
+![Model Registry](images/Step-4.png)
 
 
 - Ejecute el quinto script para desplegar el modelo
 
 
-![Deploy Azure Model](images/Step-5.jpg)
+![Deploy Azure Model](images/Step-5.png)
 
 
 # Servicio Azure Test
 
 
-![Test Model](images/Step-6.jpg)
+![Test Model](images/Step-6.png)
 
 
