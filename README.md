@@ -88,12 +88,18 @@ python ./03-test-workspace-remote.py
 
 - Ejecute el cuarto script para registrar el modelo en Azure
 
+```bash
+python ./04-azure-model-registration.py
+```
 
 ![Model Registry](images/Step-4.png)
 
 
 - Ejecute el quinto script para desplegar el modelo
 
+```bash
+python ./05-deploy-azure-model-aci.py
+```
 
 ![Deploy Azure Model](images/Step-5.png)
 
