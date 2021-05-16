@@ -95,6 +95,14 @@ python ./03-test-workspace-remote.py
 
 
 # Servicio Azure Test
+- Link Api [Api-Titanic](http://958b1618-b579-41c9-aee1-9b4582414e15.eastus2.azurecontainer.io/score)
+
+```yaml
+{
+    "data" : ["mele" , 4]
+}
+
+```
 
 
 ![Test Model](images/Step-6.png)
