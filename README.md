@@ -1,6 +1,6 @@
 ## Cloud - Especialización en analítica y ciencia de datos.
 
-Presentado por: 
+## Presentado por: 
 -Danilo Diaz Valencia(danilo.diaz@udea.edu.co) 
 -Santiago Jaramillo(santiago.jaramillog1@udea.edu.co)
 
