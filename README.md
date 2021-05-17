@@ -114,7 +114,12 @@ python ./05-deploy-azure-model-aci.py
 
 ```
 
-
 ![Test Model](images/Step-6.png)
+
+## Postman Test
+
+http://958b1618-b579-41c9-aee1-9b4582414e15.eastus2.azurecontainer.io/score
+
+![Test Model Postman ](images/Step-7.png)
 
 
