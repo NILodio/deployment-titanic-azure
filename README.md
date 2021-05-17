@@ -105,6 +105,9 @@ python ./05-deploy-azure-model-aci.py
 
 
 # Servicio Azure Test
+
+La Api es con fines educativos por tal motivo solo esta disponible por un tiempo determinado!!!
+
 - Link Api [Api-Titanic](http://958b1618-b579-41c9-aee1-9b4582414e15.eastus2.azurecontainer.io/score)
 
 ```yaml
