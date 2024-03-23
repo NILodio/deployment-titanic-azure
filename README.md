@@ -1,45 +1,45 @@
-## Cloud - Especialización en analítica y ciencia de datos.
+## Cloud - Specialization in Analytics and Data Science.
 
-## Presentado por:
+## Presented by:
 
-- Danilo Diaz Valencia : danilo.diaz@udea.edu.co
+- Danilo Diaz Valencia: danilo.diaz@udea.edu.co
 
 - Santiago Jaramillo: santiago.jaramillog1@udea.edu.co
 
 
 ### Titanic survival_probability PREDICTION
 
-El ejercicio actual consiste en la predicción de supervivencia de pasajero en la catástrofe del Titanic. El objetivo de este proyecto es de desplegar un servicio web en la nube publica de Azure mediante AzureML. Este servicio es capaz de predecir la probabilidad de supervivencia del pasajero según el género y la clase en la que estaba viajando.[link](https://www.kaggle.com/c/titanic/data)
+The current exercise involves predicting passenger survival in the Titanic catastrophe. The objective of this project is to deploy a web service on the public Azure cloud using AzureML. This service is capable of predicting the probability of passenger survival based on the gender and class they were traveling in. [link](https://www.kaggle.com/c/titanic/data)
 
-## Descripción de los datos
+## Data Description
 [Titanic Dataset](https://www.kaggle.com/c/titanic/data)
 
 
-- passenger_id : Id Pasajero
-- pclass : Ticket class : 1 = 1st, 2 = 2nd, 3 = 3rd
-- name : Nombre pasajero
-- sex : Sexo pasajero
-- age = Edad pasajero
-- sibsp = Hermano a bordo
-- parch: Parientes a bordo
-- ticket : # de ticket
-- fare : Tarifa pasajero
-- cabin :  # de Cabina
-- embarked : Puerto de embarcación : C = Cherbourg, Q = Queenstown, S = Southampton
-- survival : Sobrevivió 0 = No, 1 = Yes
+- passenger_id: Passenger ID
+- pclass: Ticket class: 1 = 1st, 2 = 2nd, 3 = 3rd
+- name: Passenger name
+- sex: Passenger gender
+- age: Passenger age
+- sibsp: Siblings aboard
+- parch: Parents/Children aboard
+- ticket: Ticket number
+- fare: Passenger fare
+- cabin: Cabin number
+- embarked: Port of embarkation: C = Cherbourg, Q = Queenstown, S = Southampton
+- survival: Survived 0 = No, 1 = Yes
 
-## Requerimientos
+## Requirements
 
-- Subscripción de Azure.
-- Docker, solo para ambiente local, recomendado para procesos de debug.
-- Crear ambiente
+- Azure subscription.
+- Docker, only for local environment, recommended for debugging processes.
+- Create environment
 - Python 3.8 -
-- IDE vs code o equivalente.
+- IDE vs code or equivalent.
 
-## ¿Cómo ejecutarlo?
+## How to run it?
 
-- Crear un nuevo ambiente 
-- Instalar las siguientes dependencias
+- Create a new environment
+- Install the following dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -55,21 +55,21 @@ pip install scikit-multilearn
 ```
 
 
-- Ejecutar el primer script de creación del ambiente 
+- Execute the first script to create the environment
 
 ```bash
 python ./01-create-environment.py
 ```
 
-- Seguir los pasos de autenticación interactiva y esperar a que el script nos aprovisione con un entorno de machine learning. Al finalizar dentro de una carpeta llamada .azureml debe existir un archivo configuración con los parámetros del equipo.
+- Follow the steps of interactive authentication and wait for the script to provision us with a machine learning environment. At the end, there should be a configuration file within a folder called .azureml with the team's parameters.
 
-- La configuración despues del primer script debe generar los siguientes recursos dentro del grupo: Azure Machine Learning, Container registry, Application Insights, Key Vault, Storage Account.
+- The configuration after the first script should generate the following resources within the group: Azure Machine Learning, Container registry, Application Insights, Key Vault, Storage Account.
 
-NOTA: Si se quiere es posible usar azure cli!
+NOTE: If desired, Azure CLI can be used!
 
 ![Resource group](images/Step-1.png)
 
-- Ejecutar el segundo script para aprovisionar el entorno de Machine Learning con un cluster para gestionar la computación. Una vez finalice el script debe aparecer en la pestaña de computo del panel general de machine learning un nuevo cluster con el nombre: cpu-cluster
+- Execute the second script to provision the Machine Learning environment with a cluster to manage computation. Once the script finishes, a new cluster named "cpu-cluster" should appear in the compute tab of the machine learning general panel.
 
 ```bash
 python ./02-create-compute.py
@@ -77,7 +77,7 @@ python ./02-create-compute.py
 
 ![Compute cloud](images/Step-1.png)
 
-- Ejecutar el tercer script para verificar ambiente de trabajo
+- Execute the third script to verify the workspace environment
 
 ```bash
 python ./03-test-workspace-remote.py
@@ -86,7 +86,7 @@ python ./03-test-workspace-remote.py
 ![Test-workspace](images/Step-3.png)
 
 
-- Ejecute el cuarto script para registrar el modelo en Azure
+- Run the fourth script to register the model in Azure
 
 ```bash
 python ./04-azure-model-registration.py
@@ -95,7 +95,7 @@ python ./04-azure-model-registration.py
 ![Model Registry](images/Step-4.png)
 
 
-- Ejecute el quinto script para desplegar el modelo
+- Run the fifth script to deploy the model
 
 ```bash
 python ./05-deploy-azure-model-aci.py
@@ -104,15 +104,15 @@ python ./05-deploy-azure-model-aci.py
 ![Deploy Azure Model](images/Step-5.png)
 
 
-# Servicio Azure Test
+# Azure Service Test
 
-La Api es con fines educativos por tal motivo solo esta disponible por un tiempo determinado!!!
+The API is for educational purposes only and is therefore only available for a limited time!!!
 
-- Link Api [Api-Titanic](http://958b1618-b579-41c9-aee1-9b4582414e15.eastus2.azurecontainer.io/score)
+- API Link [Api-Titanic](http://958b1618-b579-41c9-aee1-9b4582414e15.eastus2.azurecontainer.io/score)
 
 ```yaml
 {
-    "data" : ["mele" , 4]
+    "data": ["mele", 4]
 }
 
 ```
@@ -123,6 +123,4 @@ La Api es con fines educativos por tal motivo solo esta disponible por un tiempo
 
 http://958b1618-b579-41c9-aee1-9b4582414e15.eastus2.azurecontainer.io/score
 
-![Test Model Postman ](images/Step-7.png)
-
-
+![Test Model Postman](images/Step-7.png)
